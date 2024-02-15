@@ -1,0 +1,77 @@
+
+// Candle EA MT4
+// Developer's Site: forexroboteasy.com
+// Developed by: Forex Robot Easy Team
+
+// Include necessary libraries
+#include <Trade\Trade.mqh>
+
+// Define global variables
+input int profit_limit = 100; // Profit limit for trading operations
+input int loss_limit = -50; // Loss limit for trading operations
+
+// Define function to identify and analyze candlestick patterns
+bool analyzeCandlestickPatterns()
+{
+   // Code to identify and analyze candlestick patterns
+   // ...
+   
+   return true;
+}
+
+// Define function to implement trend detection algorithm
+bool detectTrend()
+{
+   // Code to implement trend detection algorithm based on identified candlestick patterns
+   // ...
+   
+   return true;
+}
+
+// Define function to make optimal trading decisions based on trend analysis
+bool makeTradingDecisions()
+{
+   // Code to make optimal trading decisions based on trend analysis
+   // ...
+   
+   return true;
+}
+
+// Define function to set profit and loss limits for trading operations
+bool setLimits()
+{
+   // Code to set profit and loss limits for trading operations
+   // ...
+   
+   return true;
+}
+
+// Define start function
+void OnTick()
+{
+   // Call function to identify and analyze candlestick patterns
+   if(analyzeCandlestickPatterns())
+   {
+      // Call function to implement trend detection algorithm
+      if(detectTrend())
+      {
+         // Call function to make optimal trading decisions based on trend analysis
+         if(makeTradingDecisions())
+         {
+            // Call function to set profit and loss limits for trading operations
+            if(setLimits())
+            {
+               // Code to execute trading operations
+               // ...
+            }
+         }
+      }
+   }
+}
+
+// Define deinitialization function
+void OnDeinit(const int reason)
+{
+   // Code to handle deinitialization tasks
+   // ...
+}
